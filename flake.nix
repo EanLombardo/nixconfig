@@ -28,6 +28,7 @@
       specialArgs = { inherit inputs; };
       modules = [
         ./shared.nix
+        ./graphical.nix
         nixos-hardware.nixosModules.framework-12-13th-gen-intel
         home-manager.nixosModules.home-manager
       ];
