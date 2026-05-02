@@ -17,6 +17,7 @@
     wget
     git
     vim
+    jujutsu
   ];
 
   system.stateVersion = "25.11"; 
