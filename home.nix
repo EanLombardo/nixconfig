@@ -35,8 +35,11 @@ in
     settings = {
       user.name = name;
       user.email = workEmail;
+      credential.helper = [ "cache --timeout 21600" ];
     };
   };
+
+  programs.git-credential-oauth.enable = true;
 
   programs.jujutsu = {
     enable = true;
