@@ -18,6 +18,7 @@
     git
     vim
     jujutsu
+    github-cli
   ];
 
   system.stateVersion = "25.11"; 
