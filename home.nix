@@ -62,10 +62,10 @@ in
         pkgs.vscode-extensions.yzhang.markdown-all-in-one
         pkgs.vscode-extensions.bbenoist.nix
         (pkgs.vscode-utils.extensionFromVscodeMarketplace {
-          name = "open-jj";
-          publisher = "olup";
-          version = "0.0.16";
-          sha256 = "h9pm9CGPZXrpKpJm7w8lmiloUD7w7Qch4YDLGbRIg68=";
+          name = "jjk";
+          publisher = "jjk";
+          version = "0.10.0";
+          sha256 = "mzsujU3fil3z3yDxpecaOpbXX1K8oh+6dfx/rbOwFYs=";
         })
 
       ];
