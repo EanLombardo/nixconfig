@@ -7,6 +7,7 @@
   users.users.ean = {
     isNormalUser = true;
     shell = pkgs.zsh;
+    extraGroups = ["wheel"];
   };
 
   home-manager.users.ean = {
@@ -21,6 +22,9 @@
     jujutsu
     gemini-cli
   ];
+
+  time.timeZone = "America/Los_Angeles";
+  i18n.defaultLocale = "en_US.UTF-8";
 
   system.stateVersion = "25.11"; 
 }

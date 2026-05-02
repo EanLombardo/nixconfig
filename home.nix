@@ -52,7 +52,26 @@ in
 
   programs.vscode = {
     enable = true;
+    profiles.default = {
+      extensions = [
+        pkgs.vscode-extensions.dracula-theme.theme-dracula
+        pkgs.vscode-extensions.vscodevim.vim
+        pkgs.vscode-extensions.yzhang.markdown-all-in-one
+        pkgs.vscode-extensions.bbenoist.nix
+        (pkgs.vscode-utils.extensionFromVscodeMarketplace {
+          name = "open-jj";
+          publisher = "olup";
+          version = "0.0.16";
+          sha256 = "h9pm9CGPZXrpKpJm7w8lmiloUD7w7Qch4YDLGbRIg68=";
+        })
+
+      ];
+      userSettings = {
+        "git.enabled" = false;
+      };
+    };
   };
+
 
   home.stateVersion = "25.11";
 }

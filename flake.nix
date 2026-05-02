@@ -27,6 +27,7 @@
       system = "x86_64-linux";
       specialArgs = { inherit inputs; };
       modules = [
+        ./framework12.nix
         ./shared.nix
         ./graphical.nix
         nixos-hardware.nixosModules.framework-12-13th-gen-intel
